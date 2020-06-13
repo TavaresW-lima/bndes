@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signin.css">
+    <link rel="stylesheet" href="../css/signup.css">
     <title>Document</title>
 </head>
 <body>
-    <p>Página de cadastro do usuário</p>
-    <form method= "post" action="dbUsuario/validarCadastroUsuario.php">
-        <label for="firstName">Primeiro nome:</label><br>
-        <input type="text" id="fristName" name="firstName" require="required"><br>
-        <label for="lastName">Último nome:</label><br>
-        <input type="text" id="lastName" name="lastName" require="required"><br>
-        <label for="cpf">CPF:</label><br>
-        <input type="text" id="cpf" name="cpf"><br>
-        <label for="cep">cep:</label><br>
-        <input type="text" id="cep" name="cep"><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" require="required"><br>
-        <label for="senha">Senha:</label><br>
-        <input type="text" id="senha" name="senha" require="required"><br>
-        
-        <input type="submit" value="Fazer cadastro de usuario">
-    
-      </form> 
+    <div class="main">
+     <div class="formWrapper">
+        <form method= "post" action="dbUsuario/validarCadastroUsuario.php">
+             <h1>Página de cadastro do usuário</h1>
+            <label for="firstName">Primeiro nome:</label>
+            <input class="inputDefault" type="text" id="fristName" name="firstName" require="required">
+            <label for="lastName">Último nome:</label>
+            <input class="inputDefault" type="text" id="lastName" name="lastName" require="required">
+            <label for="cpf">CPF:</label>
+            <input class="inputDefault" type="text" id="cpf" name="cpf">
+            <label for="cep">CEP:</label>
+            <input class="inputDefault" type="text" id="cep" name="cep">
+            <label for="email">Email:</label>
+            <input class="inputDefault" type="text" id="email" name="email" require="required">
+            <label for="passWord">Senha:</label>
+            <input class="inputDefault" type="text" id="passWord" name="passWord" require="required">
+            <input class="button btn_green"type="submit" value="Fazer cadastro de usuario">
+          </form>
+     </div>
+    </div>
 </body>
 </html>
